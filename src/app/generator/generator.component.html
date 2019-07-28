@@ -1,0 +1,41 @@
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-6">
+            <div class = "form-group">
+                <label>Top Text: </label>
+                <input class = "form-control" [(ngModel)] = "topText">
+            </div>
+            <div class = "form-group">
+                    <label>Bottom Text: </label>
+                    <input class = "form-control" [(ngModel)] = "bottomText">
+            </div>
+            <div class = "form-group">
+                    <label>Image: </label>
+                    <select class="form-control" [(ngModel)] = "imageName">
+                            <option>Surprised Pikachu</option>
+                            <option>Crying Pepe</option>
+                            <option>Denerys</option>
+                        </select>
+            </div>
+            <div class = "form-group">
+                    <label>Background Color: </label>
+                    <select class="form-control" [(ngModel)] = "colorName">
+                            <option>black</option>
+                            <option>blue</option>
+                            <option>orange</option>
+                        </select>
+            </div>
+        </div>
+        <div class = "col-md-6">
+            <div [class] = "colorName">
+                <h2 style = "text-align: center; color: white; padding-top: 1em;">{{ topText }}</h2>
+                <img [src]="changeImage()" class = ".img-responsive" width="200" height = "200" style = "display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;">
+                <h2 style = "text-align: center; color: white; padding-bottom: 1em;">{{ bottomText }}</h2>
+
+            </div>
+        </div>
+    </div>
+</div>
