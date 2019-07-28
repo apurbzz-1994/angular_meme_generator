@@ -2,6 +2,8 @@
 
 This is a simple meme generator created primary using property binding in Angular.
 
+![](angular_webapp.gif)
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
